@@ -255,4 +255,7 @@ def player_with_longest_name
   makePlayerHash.max_by{|k| k[:player_name].length} [:player_name]
 end
   
+def long_name_steals_a_ton?
+  num_points_scored(player_with_longest_name) >=100
+end
   
