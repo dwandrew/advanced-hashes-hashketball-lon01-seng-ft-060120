@@ -256,6 +256,6 @@ def player_with_longest_name
 end
   
 def long_name_steals_a_ton?
-  num_points_scored(player_with_longest_name) >100
+  num_points_scored(player_with_longest_name) >=100
 end
   
