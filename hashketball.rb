@@ -247,8 +247,8 @@ def winning_team
   p away_team_points
   home_team_name= game_hash[:home][:team_name]
   away_team_name= game_hash[:away][:team_name]
-  winning_team ={home_team_name => home_team_points, away_team_name => away_team_points}
-  winning_team.max
+  winning_team ={home_team_name: home_team_points, away_team_name: away_team_points}
+  winning_team
 end
 
 def player_with_longest_name
